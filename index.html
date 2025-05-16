@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ETMO - Extract, Tax, and Money Operation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+    }
+    header {
+      background: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #00ffae;
+    }
+    nav {
+      background: #121212;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #cccccc;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+    .feature-box {
+      flex: 1 1 300px;
+      background: #1b1b1b;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      color: #aaaaaa;
+      font-size: 0.9em;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      background: #00ffae;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ETMO</h1>
+    <p>Extract, Tax, and Money Operation - Official Roblox Game</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="about">
+    <h2>Welcome to ETMO</h2>
+    <p>Step into the world of strategy, power, and economy. Extract resources, impose taxes, and dominate the economy in this one-of-a-kind Roblox experience.</p>
+  </section>
+
+  <section id="features">
+    <h2 style="text-align:center;">Game Features</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Resource Extraction</h3>
+        <p>Mine, loot, and secure resources from multiple zones and protect your cargo.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Tax System</h3>
+        <p>Set taxes as a government or pay them as a civilian — the economy is yours to shape.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Money Operations</h3>
+        <p>Earn, invest, and manage your funds. Will you rule with wealth or power?</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="media">
+    <h2 style="text-align:center;">Media</h2>
+    <p style="text-align:center;">Screenshots and gameplay videos coming soon!</p>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center;">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 ETMO Game. All rights reserved.
+  </footer>
+
+</body>
+</html>
