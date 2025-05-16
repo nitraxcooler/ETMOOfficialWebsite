@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ETMO - Extract, Tax, and Money Operation</title>
+  <title>E.T.M.O - Extract, Tax, and Money Operation</title>
   <style>
     body {
       margin: 0;
@@ -13,23 +13,27 @@
     }
     header {
       background: #1e1e1e;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
       color: #00ffae;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #cccccc;
     }
     nav {
       background: #121212;
-      padding: 10px;
       text-align: center;
+      padding: 12px;
     }
     nav a {
-      margin: 0 15px;
-      text-decoration: none;
+      margin: 0 20px;
       color: #ffffff;
+      text-decoration: none;
       font-weight: bold;
     }
     section {
@@ -37,36 +41,34 @@
       max-width: 1000px;
       margin: auto;
     }
-    .hero {
-      text-align: center;
-    }
     .hero h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      text-align: center;
+      font-size: 2.2em;
+      color: #00ffae;
     }
     .hero p {
-      font-size: 1.2em;
-      color: #cccccc;
+      text-align: center;
+      font-size: 1.1em;
+      color: #bbbbbb;
     }
     .features {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      margin-top: 40px;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 30px;
     }
     .feature-box {
       flex: 1 1 300px;
       background: #1b1b1b;
-      margin: 10px;
       padding: 20px;
       border-radius: 10px;
     }
-    footer {
-      background: #1e1e1e;
+    .feature-box h3 {
+      color: #00ffae;
+    }
+    .media, .contact {
       text-align: center;
-      padding: 20px;
-      color: #aaaaaa;
-      font-size: 0.9em;
     }
     form input, form textarea {
       width: 100%;
@@ -83,18 +85,20 @@
       cursor: pointer;
       border-radius: 5px;
     }
-    @media (max-width: 768px) {
-      .features {
-        flex-direction: column;
-      }
+    footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 20px;
+      color: #aaaaaa;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>ETMO</h1>
-    <p>Extract, Tax, and Money Operation - Official Roblox Game</p>
+    <h1>E.T.M.O</h1>
+    <p>Extract, Tax, and Money Operation - You aren’t playing E.T.M.O. You ARE E.T.M.O.</p>
   </header>
 
   <nav>
@@ -105,35 +109,44 @@
   </nav>
 
   <section class="hero" id="about">
-    <h2>Welcome to ETMO</h2>
-    <p>Step into the world of strategy, power, and economy. Extract resources, impose taxes, and dominate the economy in this one-of-a-kind Roblox experience.</p>
+    <h2>Welcome to E.T.M.O</h2>
+    <p>
+      In E.T.M.O (Extract, Tax, and Money Operation), you’re not just a player — you’re the operation itself. 
+      Control a Cube-Bot assigned to survive, extract valuable items, and reach extraction points to pay tax to the Taxman. 
+      Due to “CHANGE,” you’ll also receive money back — use that to purchase items from the shop that appears after every level. 
+      Work smart, extract more, survive harder.
+    </p>
   </section>
 
   <section id="features">
     <h2 style="text-align:center;">Game Features</h2>
     <div class="features">
       <div class="feature-box">
-        <h3>Resource Extraction</h3>
-        <p>Mine, loot, and secure resources from multiple zones and protect your cargo.</p>
+        <h3>Extraction Gameplay</h3>
+        <p>Collect and extract vital items across each level while facing escalating threats.</p>
       </div>
       <div class="feature-box">
-        <h3>Tax System</h3>
-        <p>Set taxes as a government or pay them as a civilian — the economy is yours to shape.</p>
+        <h3>Tax & Change System</h3>
+        <p>Pay taxes to the Taxman at extraction points — and get money back due to CHANGE mechanics.</p>
       </div>
       <div class="feature-box">
-        <h3>Money Operations</h3>
-        <p>Earn, invest, and manage your funds. Will you rule with wealth or power?</p>
+        <h3>Dynamic Shop</h3>
+        <p>A new shop appears after each completed level, letting you spend wisely and upgrade your Cube-Bot.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Survival First</h3>
+        <p>Enemy waves and hazards keep increasing. Only the toughest Cube-Bots last long enough to finish the Operation.</p>
       </div>
     </div>
   </section>
 
-  <section id="media">
-    <h2 style="text-align:center;">Media</h2>
-    <p style="text-align:center;">Screenshots and gameplay videos coming soon!</p>
+  <section id="media" class="media">
+    <h2>Media</h2>
+    <p>Screenshots, videos, and trailers will be added here soon!</p>
   </section>
 
-  <section id="contact">
-    <h2 style="text-align:center;">Contact Us</h2>
+  <section id="contact" class="contact">
+    <h2>Contact the Devs</h2>
     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
@@ -143,7 +156,7 @@
   </section>
 
   <footer>
-    &copy; 2025 ETMO Game. All rights reserved.
+    &copy; 2025 E.T.M.O All rights reserved. You ARE the Operation.
   </footer>
 
 </body>
