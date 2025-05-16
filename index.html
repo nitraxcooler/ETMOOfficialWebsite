@@ -70,6 +70,10 @@
     .media, .contact {
       text-align: center;
     }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
     form input, form textarea {
       width: 100%;
       margin: 10px 0;
@@ -147,10 +151,10 @@
 
   <section id="contact" class="contact">
     <h2>Contact the Devs</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message"></textarea>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
@@ -158,6 +162,27 @@
   <footer>
     &copy; 2025 E.T.M.O All rights reserved. You ARE the Operation.
   </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("riKVgJ_6MbYT9cusu");
+    })();
+
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('service_qt4c4ni', 'template_9z67bww', this)
+        .then(() => {
+          alert("Message sent! We'll contact you soon.");
+          form.reset();
+        }, (error) => {
+          alert("Failed to send message: " + error.text);
+        });
+    });
+  </script>
 
 </body>
 </html>
